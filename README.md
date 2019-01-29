@@ -1,4 +1,4 @@
-# DEEP as a Service container for image classification
+# DEEP as a Service container for phytoplankton classification
 
 ![DEEP-Hybrid-DataCloud logo](https://deep-hybrid-datacloud.eu/wp-content/uploads/sites/2/2018/01/logo.png)
 
