@@ -1,6 +1,8 @@
-# DEEP as a Service container for phytoplankton classification
+<div align="center">
+<img src="https://marketplace.deep-hybrid-datacloud.eu/images/logo-deep.png" alt="logo" width="300"/>
+</div>
 
-![DEEP-Hybrid-DataCloud logo](https://deep-hybrid-datacloud.eu/wp-content/uploads/sites/2/2018/01/logo.png)
+# DEEP as a Service container for phytoplankton classification
 
 [![Build Status](https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-phytoplankton-classification-tf/master)](https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-phytoplankton-classification-tf/job/master)
 
@@ -8,9 +10,9 @@ This is a container that will run the DEEP as a Service API component. From the 
  to train or to predict, together with the basic input parameters.
 
 
-# Run the container
+## Run the container
 
-## Directly from Docker Hub
+### Directly from Docker Hub
 
 To run the Docker container directly from Docker Hub and start using the API
 simply run the following command:
@@ -22,7 +24,7 @@ $ docker run -ti -p 5000:5000 deephdc/deep-oc-phytoplankton-classification-tf
 This command will pull the Docker container from the Docker Hub
 [`deephdc`](https://hub.docker.com/u/deephdc/) organization.
 
-## Building the container
+### Building the container
 
 If you want to build the container directly in your machine (because you want
 to modify the `Dockerfile` for instance) follow the following instructions:
@@ -32,7 +34,7 @@ Building the container:
 1. Get the `DEEP-OC-phytoplankton-classification-tf` repository (this repo):
 
     ```bash
-    $ git clone https://github.com/indigo-dc/DEEP-OC-phytoplankton-classification-tf
+    $ git clone https://github.com/deephdc/DEEP-OC-phytoplankton-classification-tf
     ```
 
 2. Build the container:
@@ -54,7 +56,8 @@ Docker container locally on your machine. You can inspect and modify the
 `--debug=True` flag to the `deepaas-run` command, in order to enable the debug
 mode.
 
-# Connect to the API
+
+## Connect to the API
 
 Once the container is up and running, browse to `http://localhost:5000` to get
 the [OpenAPI (Swagger)](https://www.openapis.org/) documentation page.
