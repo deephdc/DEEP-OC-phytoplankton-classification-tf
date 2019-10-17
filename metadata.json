@@ -11,6 +11,9 @@
         "This Docker container contains a trained Convolutional Neural network optimized for phytoplankton identification using",
         "images. The architecture used is an Xception [1] network using Keras on top of Tensorflow.\n",
 
+        "The PREDICT method expects an RGB image as input (or the url of an RGB image) and will return a JSON with ",
+        "the top 5 predictions.\n",
+
         "As training dataset we have used a collection of images from the [Vlaams Instituut voor de Zee](http://www.vliz.be/)",
         "which consists of around 650K images from 60 classes of phytoplankton.\n",
 
