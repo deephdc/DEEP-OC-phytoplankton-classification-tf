@@ -1,6 +1,6 @@
 {
-    "title": "DEEP OC Phytoplankton Classification",
-    "summary": "A trained Xception net on Tensorflow/Keras to classify phytoplankton.",
+    "title": "Phytoplankton species classifier",
+    "summary": "Classify phytoplankton images among 60 classes",
     "description": [
         "Citizen science has become a powerful force for scientific inquiry, providing researchers with access to a vast array of",
         "data points while connecting non scientists to the real process of science. This citizen-researcher relationship",
@@ -25,7 +25,7 @@
         "[1]: Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357.\n"
 	],
     "keywords": [
-        "services", "library/tensorflow", "library/keras", "docker"
+        "services", "library/tensorflow", "library/keras", "docker", "deep learning", "trainable"
     ],
     "license": "Apache 2.0",
     "date_creation": "2019-01-01",
@@ -33,7 +33,9 @@
 		"dockerfile_repo": "https://github.com/deephdc/DEEP-OC-phytoplankton-classification-tf",
 		"docker_registry_repo": "deephdc/deep-oc-phytoplankton-classification-tf",
 		"code": "https://github.com/deephdc/image-classification-tf",
-        "pre_trained_weights": "https://cephrgw01.ifca.es:8080/swift/v1/phytoplankton-tf/"
+        "training_files_url": "https://cephrgw01.ifca.es:8080/swift/v1/phytoplankton-tf/",
+        "dataset_url": "http://www.vliz.be",
+        "cite_url": "http://digital.csic.es/handle/10261/194553"
 	},
     "continuous_integration": {
         "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-phytoplankton-classification-tf/master",
