@@ -9,8 +9,6 @@ pipeline {
 
     environment {
         dockerhub_repo = "deephdc/deep-oc-phytoplankton-classification-tf"
-        base_cpu_tag = "1.12.0-py3"
-        base_gpu_tag = "1.12.0-gpu-py3"
     }
 
     stages {
@@ -40,30 +38,25 @@ pipeline {
                        // CPU (aka latest, i.e. default)
                        id_cpu = DockerBuild(id,
                                             tag: ['latest', 'cpu'],
-                                            build_args: ["tag=${env.base_cpu_tag}",
-                                                         "branch=master"])
+                                            build_args: ["tag=cpu"])
 
                        // GPU
                        id_gpu = DockerBuild(id,
                                             tag: ['gpu'],
-                                            build_args: ["tag=${env.base_gpu_tag}",
-                                                         "branch=master"])
+                                            build_args: ["tag=gpu"])
                     }
 
                     if (env.BRANCH_NAME == 'test') {
                        // CPU
                        id_cpu = DockerBuild(id,
                                             tag: ['test', 'cpu-test'],
-                                            build_args: ["tag=${env.base_cpu_tag}",
-                                                         "branch=test"])
+                                            build_args: ["tag=cpu-test"])
 
                        // GPU
                        id_gpu = DockerBuild(id,
                                             tag: ['gpu-test'],
-                                            build_args: ["tag=${env.base_gpu_tag}",
-                                                         "branch=test"])
+                                            build_args: ["tag=gpu-test"])
                     }
-
                 }
             }
             post {
