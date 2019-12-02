@@ -25,7 +25,7 @@
         "[1]: Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357.\n"
 	],
     "keywords": [
-        "library/tensorflow", "library/keras", "docker", "deep learning", "trainable", "inference", "api-v1"
+        "library/tensorflow", "library/keras", "docker", "deep learning", "trainable", "inference", "pre-trained", "api-v1"
     ],
     "license": "Apache 2.0",
     "date_creation": "2019-01-01",
