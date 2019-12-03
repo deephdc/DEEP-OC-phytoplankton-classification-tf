@@ -1,6 +1,6 @@
 {
     "title": "Phytoplankton species classifier",
-    "summary": "Classify phytoplankton images among 60 classes",
+    "summary": "Classify phytoplankton images among 60 classes.",
     "description": [
         "Citizen science has become a powerful force for scientific inquiry, providing researchers with access to a vast array of",
         "data points while connecting non scientists to the real process of science. This citizen-researcher relationship",
@@ -25,7 +25,7 @@
         "[1]: Chollet, Francois. [Xception: Deep learning with depthwise separable convolutions](https://arxiv.org/abs/1610.02357) arXiv preprint (2017): 1610-02357.\n"
 	],
     "keywords": [
-        "library/tensorflow", "library/keras", "docker", "deep learning", "trainable", "inference", "api-v1"
+        "tensorflow", "docker", "deep learning", "trainable", "inference", "pre-trained", "image classification",  "api-v1"
     ],
     "license": "Apache 2.0",
     "date_creation": "2019-01-01",
