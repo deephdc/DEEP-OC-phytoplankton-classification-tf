@@ -66,5 +66,5 @@ mode.
 
 ## Connect to the API
 
-Once the container is up and running, browse to `http://localhost:5000` to get
+Once the container is up and running, browse to `http://localhost:5000/ui` to get
 the [OpenAPI (Swagger)](https://www.openapis.org/) documentation page.
