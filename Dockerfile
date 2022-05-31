@@ -13,7 +13,7 @@ ENV CONTAINER_VERSION "0.1"
 ENV CONTAINER_DESCRIPTION "DEEP as a Service Container: Phytoplankton Classification"
 
 # Download network weights
-ENV SWIFT_CONTAINER https://cephrgw01.ifca.es:8080/swift/v1/phytoplankton-tf/
+ENV SWIFT_CONTAINER https://api.cloud.ifca.es:8080/swift/v1/phytoplankton-tf/
 ENV MODEL_TAR phytoplankton.tar.xz
 
 RUN rm -rf image-classification-tf/models/*
